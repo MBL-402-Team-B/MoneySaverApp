@@ -1,0 +1,15 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">24dp</dimen>
+
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="Tile_Page_Text_Size">24sp</dimen>
+
+    <dimen name="ExpandableGroupParentTextSize">18sp</dimen>
+    <dimen name="ExpandableGroupChildTextSize">16sp</dimen>
+    <dimen name="ExpandableGroupChild_vertical_margin">5dp</dimen>
+
+    <dimen name="GoalAndProjected_Text_Size">24sp</dimen>
+    <item name="BigToastTextSizeInSP" format="float" type="dimen">24</item>
+</resources>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Money Saver App</string>
+    <string name="action_settings">Settings</string>
+    <string name="app_title">Money Saver</string>
+    <string name="programmers" translatable="false">
+        Kenneth Bearden\n
+        Joseph Clovis\n
+        Joseph Freese\n
+        Christopher Jackson\n
+        Vatana Ou</string>
+    <string name="course">MBL/402</string>
+    <string name="DueDate">July 11, 2016</string>
+    <string name="instructor" translatable="false">Miguel Garcia-Uchofen</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="action_summary">Summary</string>
+    <string name="action_createTestData">Create test data</string>
+    <string name="title_activity_maps">Banks and ATMs</string>
+
+    <!--Google key string is located in separate file-->
+    <!--Android key for debug and development is in the app/src/debug/res/values directory-->
+    <!--If this app were to go into release, a new key file would be placed in the app/src/release/res/values directory-->
+</resources>

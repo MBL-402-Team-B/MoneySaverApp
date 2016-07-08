@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--This Android key is reserved for Debug only. Do not use for release.-->
+    <string name="google_maps_key" translatable="false">AIzaSyA7GhEAb_CRaNUmGcPKcl_7od7aW8CXDKo</string>
+
+</resources>

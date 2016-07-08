@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".SettingsActivity">
+
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shutdown on low battery"
+        android:id="@+id/chkLowBattery"
+        android:layout_below="@id/settings_toolbar"
+         />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Can't adjust title bar color yet"
+        android:id="@+id/txtAdjustTitleColor"
+        android:layout_below="@+id/chkLowBattery"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_alignParentStart="true" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/redSlider"
+        android:thumbTint="@color/colorRed"
+        android:layout_below="@+id/txtAdjustTitleColor"
+        android:max="255"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/redSliderValue"
+        android:text="255"
+        android:layout_below="@id/redSlider"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/greenSlider"
+        android:thumbTint="@color/colorGreen"
+        android:layout_below="@+id/redSliderValue"
+        android:max="255"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/greenSliderValue"
+        android:text="255"
+        android:layout_below="@id/greenSlider"/>
+
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/blueSlider"
+        android:thumbTint="@color/colorBlue"
+        android:layout_below="@+id/greenSliderValue"
+        android:max="255"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/blueSliderValue"
+        android:text="255"
+        android:layout_below="@id/blueSlider"/>
+
+
+</RelativeLayout>

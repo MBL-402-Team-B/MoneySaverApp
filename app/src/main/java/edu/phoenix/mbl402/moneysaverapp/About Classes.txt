@@ -1,0 +1,17 @@
+Data storage classes:
+    BankAccount
+    DebtItem
+    FinancialPlanning
+    IncomeItem
+    ReoccurringExpense
+    UserPreferences
+
+Support functionality classes:
+    DataIO - reads/writes data to storage
+    ExpandableListAdapter - helps with operation of expandable lists
+    TestingTools - used to create dummy data and other features as needed for testing
+
+Activity Classes
+    MainActivity - shows title page of app
+    SettingsActivity - supports user configurable settings, child to MainActivity
+    SummaryActivity - displays summary of financial data using expandable list, child to MainActivity

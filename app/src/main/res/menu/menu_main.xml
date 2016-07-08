@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="edu.phoenix.mbl402.moneysaverapp.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_summary"
+        android:orderInCategory="200"
+        android:title="@string/action_summary"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_createTestData"
+        android:orderInCategory="300"
+        android:title="@string/action_createTestData"
+        app:showAsAction="never" />
+
+
+</menu>
