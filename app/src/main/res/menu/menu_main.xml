@@ -8,14 +8,19 @@
         android:title="@string/action_settings"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_summary"
+        android:id="@+id/action_expenses"
         android:orderInCategory="200"
+        android:title="@string/action_expenses"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_summary"
+        android:orderInCategory="300"
         android:title="@string/action_summary"
         app:showAsAction="never" />
 
     <item
         android:id="@+id/action_createTestData"
-        android:orderInCategory="300"
+        android:orderInCategory="400"
         android:title="@string/action_createTestData"
         app:showAsAction="never" />
 
