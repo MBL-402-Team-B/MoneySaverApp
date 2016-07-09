@@ -1,20 +1,15 @@
 package edu.phoenix.mbl402.moneysaverapp;
 
-import android.widget.BaseExpandableListAdapter;
-
-
-
-import java.util.HashMap;
-import java.util.List;
-
 import android.content.Context;
 import android.graphics.Typeface;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.BaseExpandableListAdapter;
 import android.widget.TextView;
 
-import edu.phoenix.mbl402.moneysaverapp.R;
+import java.util.HashMap;
+import java.util.List;
 
 public class ExpandableListAdapter extends BaseExpandableListAdapter {
     // code borrowed from http://www.androidhive.info/2013/07/android-expandable-list-view-tutorial/
