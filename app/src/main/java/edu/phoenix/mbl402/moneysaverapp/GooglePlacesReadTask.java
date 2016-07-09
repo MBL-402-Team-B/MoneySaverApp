@@ -5,6 +5,7 @@ import android.util.Log;
 
 import com.google.android.gms.maps.GoogleMap;
 
+// Test GitHub sync
 public class GooglePlacesReadTask extends AsyncTask<Object, Integer, String> {
     String googlePlacesData = null;
     GoogleMap googleMap;
