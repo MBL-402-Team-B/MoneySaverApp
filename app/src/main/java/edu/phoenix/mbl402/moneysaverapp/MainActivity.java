@@ -88,6 +88,12 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
 
+            case R.id.action_expenses: {
+                Intent intent = new Intent(this, ReoccurringExpensesActicity.class);
+                startActivity(intent);
+                return true;
+            }
+
             case R.id.action_createTestData: {
                 try {
                     TestingTools.createTestData(this);
