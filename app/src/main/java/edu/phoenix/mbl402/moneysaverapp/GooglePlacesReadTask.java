@@ -2,6 +2,7 @@ package edu.phoenix.mbl402.moneysaverapp;
 
 import android.os.AsyncTask;
 import android.util.Log;
+
 import com.google.android.gms.maps.GoogleMap;
 
 public class GooglePlacesReadTask extends AsyncTask<Object, Integer, String> {

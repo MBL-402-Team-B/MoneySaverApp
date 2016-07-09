@@ -1,19 +1,16 @@
 package edu.phoenix.mbl402.moneysaverapp;
 
 import android.graphics.Color;
+import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
+import android.widget.ExpandableListView;
+import android.widget.TextView;
 
-import java.net.MalformedURLException;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
-import java.util.Locale;
-
-import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
-import android.widget.ExpandableListView;
-import android.widget.TextView;
 
 public class SummaryActivity extends AppCompatActivity {
     private ExpandableListAdapter listAdapter;
@@ -38,7 +35,7 @@ public class SummaryActivity extends AppCompatActivity {
         toolbar.setBackgroundColor(UserPreferences.getBackgroundColor());
 
         // code borrowed from http://www.androidhive.info/2013/07/android-expandable-list-view-tutorial/
-        // get the listview
+        // get the ListView
         expListView = (ExpandableListView) findViewById(R.id.lvExp);
         prepareListData();
         listAdapter = new ExpandableListAdapter(this, listDataHeader, listDataChild);
@@ -70,13 +67,13 @@ public class SummaryActivity extends AppCompatActivity {
 
         // Adding parent data
         ArrayList<BankAccount> accounts = new ArrayList<>();
-        List<String> listAccountItem = new ArrayList<String>();
+        List<String> listAccountItem = new ArrayList<>();
         ArrayList<DebtItem> debts = new ArrayList<>();
-        List<String> debtItems = new ArrayList<String>();
+        List<String> debtItems = new ArrayList<>();
         ArrayList<IncomeItem> incomeItems = new ArrayList<>();
-        List<String> incomeItem = new ArrayList<String>();
+        List<String> incomeItem = new ArrayList<>();
         ArrayList<ReoccurringExpense> expenses = new ArrayList<>();
-        List<String> expenseItems = new ArrayList<String>();
+        List<String> expenseItems = new ArrayList<>();
         DataIO.loadBankAccount(this, accounts);
         DataIO.loadIncome(this, incomeItems);
         DataIO.loadDebt(this, debts);
