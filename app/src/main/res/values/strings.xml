@@ -2,7 +2,11 @@
     <string name="app_name">Money Saver App</string>
     <string name="action_settings">Settings</string>
     <string name="action_expenses">Reoccurring Expenses</string>
+    <string name="action_planning">Financial Planning</string>
     <string name="app_title">Money Saver</string>
+
+
+<!--Main Activity-->
     <string name="programmers" translatable="false">
         Kenneth Bearden\n
         Joseph Clovis\n
@@ -17,6 +21,13 @@
     <string name="action_createTestData">Create test data</string>
     <string name="title_activity_maps">Banks and ATMs</string>
     <string name="title_activity_reoccurring_expenses_acticity">ReoccurringExpensesActicity</string>
+
+<!--Financial Planning Activity-->
+    <string name="financial_planner">Financial Planner</string>
+    <string name="what_is_your_savings_goal">What is your savings goal?</string>
+    <string name="enter_amount_to_save">Enter amount to save!</string>
+    <string name="submit">Submit</string>
+
 
 
     <!--Google key string is located in separate file-->

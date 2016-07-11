@@ -94,6 +94,12 @@ public class MainActivity extends AppCompatActivity {
                 return true;
             }
 
+            case R.id.action_planning: {
+                Intent intent = new Intent(this, FinancialPlanningActivity.class);
+                startActivity(intent);
+                return true;
+            }
+
             case R.id.action_createTestData: {
                 try {
                     TestingTools.createTestData(this);
