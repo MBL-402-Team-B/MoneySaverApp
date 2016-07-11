@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
             case R.id.action_expenses: {
-                Intent intent = new Intent(this, ReoccurringExpensesActicity.class);
+                Intent intent = new Intent(this, ReoccurringExpensesActivity.class);
                 startActivity(intent);
                 return true;
             }

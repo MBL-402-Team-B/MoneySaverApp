@@ -8,18 +8,27 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="net.androidbootcamp.mymoneytestapp.ReoccurringExpensesActicity">
+    tools:context="edu.phoenix.mbl402.moneysaverapp.ReoccurringExpensesActivity">
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Enter the Expense name, a description of the expense, the period, and amount!"
+        android:text="Enter the information below and click Record Expense "
         android:id="@+id/textView_message"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/Record_btn"
         android:layout_gravity="center_horizontal"
         android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ItemNumber_txt"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_marginBottom="-10dp" />
 
     <EditText
         android:layout_width="match_parent"
@@ -29,7 +38,7 @@
         android:layout_centerVertical="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="10dp" />
 
     <EditText
         android:layout_width="351dp"
@@ -83,7 +92,7 @@
             android:id="@+id/Next_btn"
             android:layout_gravity="center_horizontal"
             android:layout_above="@+id/Cancel_bth"
-            android:layout_centerHorizontal="true" />
+            android:layout_alignEnd="@+id/Cancel_bth" />
 
         <Button
             android:layout_width="wrap_content"
@@ -91,8 +100,10 @@
             android:text="Delete"
             android:id="@+id/Delete_btn"
             android:layout_gravity="center_horizontal"
-            android:layout_alignParentBottom="true"
-            android:layout_toStartOf="@+id/Record_btn" />
+            android:layout_below="@+id/Cancel_bth"
+            android:layout_alignStart="@+id/Cancel_bth"
+            android:layout_alignEnd="@+id/Cancel_bth"
+            android:visibility="invisible" />
 
         <Button
             android:layout_width="wrap_content"
@@ -100,18 +111,29 @@
             android:text="Record Expense"
             android:id="@+id/Record_btn"
             android:layout_gravity="center_horizontal"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true" />
+            android:layout_below="@+id/Delete_btn"
+            android:layout_alignEnd="@+id/Delete_btn"
+            android:layout_alignStart="@+id/Delete_btn" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Click &apos;NEXT&apos; to navigate through current list to delete and update! Click &apos;CANCEL EDITING&apos; if you decide not to modify anything!"
+            android:text="Click &apos;NEXT&apos; or &apos;BACK&apos; to navigate through current list! Click &apos;DELETE&apos; to remove from list, or click &apos;Record Expense to update the chosen item! Click &apos;CANCEL EDITING&apos; if you decide not to modify anything!"
             android:id="@+id/next_txt"
             android:textAlignment="center"
             android:textColor="#000000"
             android:layout_alignParentTop="true"
-            android:layout_alignEnd="@+id/Record_btn" />
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:id="@+id/Back_btn"
+            android:layout_above="@+id/Cancel_bth"
+            android:layout_alignStart="@+id/Cancel_bth" />
+
     </RelativeLayout>
 
 </LinearLayout>

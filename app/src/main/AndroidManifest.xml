@@ -49,7 +49,7 @@
                 android:value=".MainActivity" />
         </activity>
         <activity
-            android:name=".ReoccurringExpensesActicity"
+            android:name=".ReoccurringExpensesActivity"
             android:label="Reoccurring Expenses"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar">
